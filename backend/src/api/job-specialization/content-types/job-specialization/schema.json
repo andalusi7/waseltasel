@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_specializations",
+  "info": {
+    "singularName": "job-specialization",
+    "pluralName": "job-specializations",
+    "displayName": "Job Specializations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "specialization": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job.job",
+      "mappedBy": "job_specializations"
+    }
+  }
+}

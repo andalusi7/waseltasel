@@ -1,0 +1,219 @@
+{
+    "NavMain": {
+        "AboutUs": "About Us",
+        "AboutFoundation": "About the Foundation",
+        "OurVision": "Our Vision",
+        "ContactUs": "Contact Us",
+        "Activities": "Works and activities",
+        "Empowerment": "Empowerment",
+        "HumanitarianRelief": "Humanitarian Relief",
+        "CounteringExtremism": "Countering Extremism",
+        "EnvironmentalProtection": "Environmental Protection",
+        "Publications": "Publications",
+        "Reports": "Reports",
+        "ResearchStudies": "Research and Studies",
+        "Books": "Books",
+        "Jobs": "Jobs",
+        "JobsTraining": "Jobs and Training",
+        "AdvertiseWithUs": "Advertise with Us"
+    },
+    "Header": {
+        "DonateNow": "Donate Now",
+        "ContactUs": "Contact Us"
+    },
+    "Carousel": {
+        "Item1": {
+            "Title": "Join us in building a sustainable and peaceful world.",
+            "Description": "At \"Wasel Tasel\", we are dedicated to empowering individuals and supporting communities for a brighter future. We believe that humanitarian work is the cornerstone of societal progress, leading the way to a better tomorrow.",
+            "ButtonText": "Donate Now"
+        },
+        "Item2": {
+            "Title": "Be part of the change for a better tomorrow.",
+            "Description": "Together, we can build a brighter future through collective action and support for humanitarian initiatives.",
+            "ButtonText": "Contribute Now"
+        },
+        "Item3": {
+            "Title": "Help us make a real difference.",
+            "Description": "With your support, we can achieve peace and sustainability for future generations.",
+            "ButtonText": "Donate Today"
+        }
+    },
+    "Priorities": {
+        "HeaderTitle": "Our Priorities",
+        "More": "More",
+        "Empowerment": {
+            "Title": "Empowerment",
+            "Description": "At \"Wasel Tasel\", we are committed to fostering sustainable development by empowering individuals and social groups to innovate and create. Our initiatives focus on education, training, and encouraging active community participation in decision-making processes. Additionally, we work to develop policies and legislation that uphold individual rights, enhance capabilities, and enable meaningful contributions to society."
+        },
+        "HumanitarianAid": {
+            "Title": "Humanitarian Relief",
+            "Description": "\"Wasel Tasel\" prioritizes providing essential support to individuals and communities affected by crises, wars, and natural disasters. Through strategic interventions, we aim to alleviate suffering, foster stability, and build resilience in impacted communities. This includes delivering basic resources, strengthening local capacities, and ensuring rapid, effective responses to emergent challenges."
+        },
+        "PreventingExtremism": {
+            "Title": "Environmental Protection",
+            "Description": "We are dedicated to ensuring a sustainable future by preserving natural resources, mitigating the effects of climate change, and advocating for policies that promote environmental stewardship. Our efforts focus on improving quality of life today while safeguarding the planet for future generations."
+        },
+        "EnvironmentalProtection": {
+            "Title": "Prevention of Extremism",
+            "Description": "\"Wasel Tasel\" is devoted to cultivating a culture of peace and coexistence. By addressing the root causes of extremism, we promote inclusiveness and encourage active participation of all community members in fostering harmony and resilience."
+        }
+    },
+    "Metrics": {
+        "WhoWeAre": "About Us",
+        "More": "More",
+        "WhoWeAreDescription": "\"Wasel Tasel\" Humanitarian Foundation is a non-governmental, non-profit civil society organization dedicated to serving the public interest. Founded in Iraq in 2015 as a youth-led initiative, the foundation emerged in response to the humanitarian needs created by the widespread displacement crisis caused by terrorist activities in 2014. Since its inception, \"Wasel Tasel\" has delivered critical humanitarian and relief services across several regions, including Iraq, Syria, Lebanon, Sudan, and Palestine. Guided by ISO 26000 social responsibility standards, we operate with a steadfast commitment to humanity, neutrality, respect for human rights, and integrity. Through partnerships with international agencies and organizations, \"Wasel Tasel\" strives to build a safer, more sustainable world for communities in need.",
+        "YearsOfImpact": "Years of Impact",
+        "PeopleRescued": "People Rescued",
+        "FundingVolume": "Funding Volume",
+        "IndirectBeneficiaries": "Indirect Beneficiaries",
+        "Thousand": "Thousand",
+        "Million": "Million"
+    },
+    "Banner": {
+        "Title1": "Join us for a sustainable world of peace.",
+        "Title2": "Towards a better life that ensures human dignity and rights.",
+        "DonateNow": "Donate Now",
+        "ExploreProjects": "Explore Our Projects"
+    },
+    "Publications": {
+        "Title": "Publications",
+        "More": "More",
+        "NoPublicationsAvailable": "No Publications Available.",
+        "Description": "Within our area of focus, the \"Wasel Tasel\" Humanitarian Foundation strives to achieve a knowledge society by producing and employing knowledge in its policies and programs. We aim to enrich institutions, libraries, and humanitarian specialties with diverse publications, such as books, reports, and studies, through our modern strategy that seeks to enhance awareness and knowledge and support evidence-based decision-making to contribute to building an enlightened society capable of effectively addressing various challenges."
+    },
+    "PhotosCard": {
+        "PlaceholderTitle": "Placeholder Title",
+        "PlaceholderDescription": "This is a placeholder description for the photo card."
+    },
+    "Projects": {
+        "Title": "Projects",
+        "NoProjectsAvailable": "No Projects Available.",
+        "More": "More",
+        "Description": "\"Wasl Tasl\" Foundation works with great and exceptional efforts to reach the needy and affected in various communities. It extends a helping hand and partnership to agencies and institutions that contribute to supporting the Foundation’s programs and projects with the aim of bridging social gaps and achieving sustainable development. Wasl Tasl’s pioneering projects have enabled the Foundation to open channels of partnership with many donors in the humanitarian field, which has contributed to changing the lives of millions of people around the world. Thanks to these efforts, the Foundation seeks to achieve a positive and sustainable impact on the lives of individuals and communities."
+    },
+    "Partners": {
+        "Title": "Partners we have worked with"
+    },
+    "Footer": {
+        "Foundation": "Foundation",
+        "AboutUs": "About Wasel Tasel",
+        "OurHistory": "Our History",
+        "OurPriorities": "Our Priorities",
+        "BePartOfImpact": "Be part of the impact",
+        "JoinUs": "Join us",
+        "DonateNow": "Donate now",
+        "InstitutionalImpact": "Institutional Impact",
+        "Projects": "Foundation Projects",
+        "Publications": "Publications",
+        "Reports": "Reports",
+        "ContactUs": "Contact Us",
+        "Facebook": "Facebook",
+        "Instagram": "Instagram",
+        "LinkedIn": "Linkedin",
+        "YouTube": "Youtube"
+    },
+    "PagesTitles": {
+        "About": "About Us",
+        "Projects": "Works and activities",
+        "Publications": "Publications",
+        "Contact": "Contact Us",
+        "Jobs": "Jobs and Trainings"
+    },
+    "AboutOrg": {
+        "Title": "About the Organization",
+        "Description": "What began with the slow, determined steps of a young girl affected by spinal deformity due to the war in Iraq has grown into a global humanitarian mission. Her story became the inspiration for a youth-led initiative that has since touched the lives of millions across the world. Today, Wasel Tasel is a dynamic organization managing diverse humanitarian programs in Iraq, Lebanon, Palestine, Sudan, and South Sudan.",
+        "ImageAlt": "Hands sharing food",
+        "Vision": {
+            "Title": "Our Vision",
+            "Description": "A sustainable, peaceful world that connects people with one another."
+        },
+        "Mission": {
+            "Title": "Our Mission",
+            "Description": "At Wasel Tasel, we are committed to empowering individuals and communities, delivering humanitarian relief, combating violent extremism, and protecting the environment. Our mission is to create a more just, inclusive, and sustainable world."
+        }
+    },
+    "Contact": {
+        "Title": "Contact Our Offices",
+        "Offices": [
+            {
+                "name": "Anbar Office",
+                "location": "Anbar, Ramadi",
+                "phone": "+964 786 8771 000",
+                "email": "info@wasel-tasel.org"
+            },
+            {
+                "name": "Mosul Office",
+                "location": "Nineveh, Mosul",
+                "phone": "+964 786 8771 000",
+                "email": "info@wasel-tasel.org"
+            }
+        ],
+        "SocialMedia": {
+            "Facebook": "Facebook",
+            "Instagram": "Instagram",
+            "LinkedIn": "LinkedIn",
+            "YouTube": "YouTube"
+        },
+        "MapPlaceholder": "Our location on the map"
+    },
+    "Feedback": {
+        "Title": "Follow-up, Evaluation, Accountability and Education Department.",
+        "Description": "Wasel Tasel Humanitarian Foundation is committed to ensuring a prompt, accessible, and effective response to complaints and suggestions. Our mechanism adheres to the highest standards of humanitarian protection, privacy, confidentiality, participation, and the promotion of safety and human rights.",
+        "StepsTitle": "Steps to Submit Suggestions and Complaints",
+        "ChannelsTitle": "We provide multiple channels for receiving suggestions, complaints, and inquiries to ensure accessibility for all:",
+        "Steps": [
+            "Phone: Call us directly on +964 7877440444 to submit your complaint or suggestion.",
+            "Email: Send an email to meal@wasel-tasel.org with your feedback or concerns.",
+            "Complaints and Suggestions Boxes: Drop your complaint or suggestion into the designated boxes available at all Wasel Tasel Humanitarian Foundation offices.",
+            "In-person meeting: Visit our offices to conduct a direct, in-person interview with a follow-up and evaluation team member.",
+            "Social media: Reach out through the official social media platforms of Wasel Tasel Humanitarian Foundation for direct communication."
+        ]
+    },
+    "JobsFilter": {
+        "Title": "Filter",
+        "JobType": "Job Type",
+        "JobTypePlaceholder": "All Jobs",
+        "JobTypes": {
+            "FullTime": "Full Time",
+            "PartTime": "Part Time",
+            "Contract": "Contract",
+            "Training": "Training",
+            "Remote": "Remote"
+        },
+        "Location": "Location",
+        "LocationPlaceholder": "Select Location",
+        "Locations": {
+            "Anbar": "Anbar",
+            "Baghdad": "Baghdad",
+            "Mosul": "Mosul"
+        },
+        "Advertiser": "Advertiser",
+        "AdvertiserPlaceholder": "Select Advertiser",
+        "Advertisers": {
+            "WaselTasel": "Wasel Tasel Foundation",
+            "Partners": "Our Partners"
+        },
+        "Specializations": "Specializations",
+        "SpecializationPlaceholder": "Select Specialization",
+        "SpecializationOptions": {
+            "EnvironmentProtection": "Environment Protection",
+            "HumanitarianRelief": "Humanitarian Relief",
+            "Housing": "Housing",
+            "ExtremismPrevention": "Extremism Prevention"
+        },
+        "Search": "Search",
+        "Clear": "Clear",
+        "Loading": "Loading"
+    },
+    "JobsList": {
+        "Title": "Discover Featured Jobs & Training Opportunities",
+        "ShowingResults": "Showing {count} of {total} results",
+        "TimeAgo": "2 hours ago",
+        "Apply": "Apply",
+        "Share": "Share",
+        "Copied": "Copied",
+        "shareMessage": "You have been invited to apply for",
+        "ApplyHere": "Apply here",
+        "NoJobsAvailable": "No jobs available."
+    }
+}

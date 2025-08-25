@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_locations",
+  "info": {
+    "singularName": "job-location",
+    "pluralName": "job-locations",
+    "displayName": "Job Locations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "location": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job.job",
+      "mappedBy": "job_locations"
+    }
+  }
+}

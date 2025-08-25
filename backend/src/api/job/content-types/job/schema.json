@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultMarkdown"
+      },
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "deadline": {
+      "type": "date",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "job_locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-location.job-location",
+      "inversedBy": "jobs"
+    },
+    "job_advertisers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-advertiser.job-advertiser",
+      "inversedBy": "jobs"
+    },
+    "job_specializations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-specialization.job-specialization",
+      "inversedBy": "jobs"
+    },
+    "apply_url": {
+      "type": "string",
+      "required": true
+    },
+    "job_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-type.job-type",
+      "inversedBy": "jobs"
+    }
+  }
+}

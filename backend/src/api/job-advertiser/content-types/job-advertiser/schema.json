@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_advertisers",
+  "info": {
+    "singularName": "job-advertiser",
+    "pluralName": "job-advertisers",
+    "displayName": "Job Advertisers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "advertiser": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job.job",
+      "mappedBy": "job_advertisers"
+    }
+  }
+}
