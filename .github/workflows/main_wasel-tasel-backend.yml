@@ -51,7 +51,11 @@ jobs:
         with:
           name: backend-artifact
 
-      # 2. Login to Azure
+      # 2. Check the downloaded files to see the correct path
+      - name: Check downloaded files
+        run: ls -R
+
+      # 3. Login to Azure
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -59,10 +63,10 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3BA48FAA1462469A94049CD72DBB67F0 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EE7A2B631FDC466DA550E0286937E6C2 }}
 
-      # 3. Deploy to Azure Web App
+      # 4. Deploy to Azure Web App
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'wasel-tasel-backend'
           slot-name: 'Production'
-          package: ./backend-artifact   # ← المسار الصحيح بعد تنزيل الـ artifact
+          package: ./backend-artifact  # ← بعد الفحص سنعدل هذا إذا لزم
