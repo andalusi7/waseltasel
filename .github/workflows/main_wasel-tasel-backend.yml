@@ -58,4 +58,5 @@ jobs:
         with:
           app-name: 'wasel-tasel-backend'
           slot-name: 'Production'
-          package: ./backend-artifact  # ← هذا هو المجلد الجذر الذي يحتوي على package.json
+          package: ./backend  # ← هذا هو المجلد الجذر الذي يحتوي على package.json
+
