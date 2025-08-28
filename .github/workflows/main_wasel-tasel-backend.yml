@@ -13,16 +13,16 @@ jobs:
       contents: read
 
     steps:
-      # 1. Checkout the repo
+      # Checkout the repo
       - uses: actions/checkout@v4
 
-      # 2. Setup Node.js
+      # Setup Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
 
-      # 3. Install dependencies, build, and test
+      # Install dependencies, build, and test
       - name: Install dependencies, build, and test
         run: |
           cd backend
@@ -30,7 +30,7 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
-      # 4. Upload backend folder as artifact
+      # Upload backend folder as artifact
       - name: Upload backend artifact
         uses: actions/upload-artifact@v4
         with:
@@ -45,17 +45,17 @@ jobs:
       contents: read
 
     steps:
-      # 1. Download the artifact
+      # Download the artifact
       - name: Download backend artifact
         uses: actions/download-artifact@v4
         with:
           name: backend-artifact
 
-      # 2. Check the downloaded files to see the correct path
-      - name: Check downloaded files
-        run: ls -R
+      # Find package.json inside the artifact
+      - name: Find package.json
+        run: find . -name "package.json"
 
-      # 3. Login to Azure
+      # Login to Azure
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -63,10 +63,10 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3BA48FAA1462469A94049CD72DBB67F0 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EE7A2B631FDC466DA550E0286937E6C2 }}
 
-      # 4. Deploy to Azure Web App
+      # Deploy to Azure Web App
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'wasel-tasel-backend'
           slot-name: 'Production'
-          package: ./backend-artifact  # ← بعد الفحص سنعدل هذا إذا لزم
+          package: ./backend-artifact  # ← بعد معرفة المسار الصحيح اضبطه هنا
