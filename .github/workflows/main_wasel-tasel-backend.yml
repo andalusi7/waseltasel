@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: ./waseltasel/backend
+          path: ./backend
 
   deploy:
     runs-on: ubuntu-latest
@@ -58,4 +58,5 @@ jobs:
         with:
           app-name: 'wasel-tasel-backend'
           slot-name: 'Production'
-          package: ./waseltasel/backend
+          package: ./backend
+
