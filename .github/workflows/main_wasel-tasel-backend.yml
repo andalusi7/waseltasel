@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies, build, and test
         run: |
-          cd backend
+          cd waseltasel/backend
           npm install
           npm run build --if-present
           npm run test --if-present
@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: ./backend
+          path: ./waseltasel/backend
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,20 +46,16 @@ jobs:
         with:
           name: node-app
 
-     - name: Login to Azure
-  uses: azure/login@v2
-  with:
-    client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D1718F243250431688CE0B5DD01751C8 }}
-    tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3BA48FAA1462469A94049CD72DBB67F0 }}
-    subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EE7A2B631FDC466DA550E0286937E6C2 }}
-
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D1718F243250431688CE0B5DD01751C8 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3BA48FAA1462469A94049CD72DBB67F0 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EE7A2B631FDC466DA550E0286937E6C2 }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'wasel-tasel-backend'
           slot-name: 'Production'
-          package: ./backend
-
-
-
+          package: ./waseltasel/backend
