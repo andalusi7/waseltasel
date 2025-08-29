@@ -22,10 +22,10 @@ ENV NODE_ENV=${NODE_ENV}
 
 # Set working directory and copy package files
 WORKDIR /opt/
-COPY package.json package-lock.json ./
+COPY package.json yarn.lock ./
 
 # Install dependencies
-RUN npm ci --omit=dev
+RUN yarn install --frozen-lockfile --production=true
 
 # Add node_modules/.bin to PATH
 ENV PATH /opt/node_modules/.bin:$PATH
@@ -35,10 +35,10 @@ WORKDIR /opt/app
 COPY . .
 
 # Build the Strapi project
-RUN npm run build
+RUN yarn build
 
-# Expose Strapi default port
-EXPOSE 1337
+# Expose Strapi default port (but Azure will override with WEBSITES_PORT/PORT)
+EXPOSE 8080
 
 # Start Strapi in production mode
-CMD ["npm", "run", "start"]
+CMD ["yarn", "start"]
