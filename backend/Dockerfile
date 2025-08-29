@@ -1,18 +1,31 @@
+# Use official Node.js image (Alpine for small size)
 FROM node:22-alpine
 
 # Install dependencies for building native packages
-RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git
+RUN apk update && apk add --no-cache \
+    build-base \
+    gcc \
+    autoconf \
+    automake \
+    zlib-dev \
+    libpng-dev \
+    nasm \
+    bash \
+    vips-dev \
+    git \
+    python3 \
+    make
 
-# Set environment
-ARG NODE_ENV=development
+# Set environment to production
+ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 # Set working directory and copy package files
 WORKDIR /opt/
 COPY package.json package-lock.json ./
 
-# Install dependencies using npm
-RUN npm install --omit=dev
+# Install dependencies
+RUN npm ci --omit=dev
 
 # Add node_modules/.bin to PATH
 ENV PATH /opt/node_modules/.bin:$PATH
@@ -21,11 +34,11 @@ ENV PATH /opt/node_modules/.bin:$PATH
 WORKDIR /opt/app
 COPY . .
 
-# Set correct permissions and switch to non-root user
-RUN chown -R node:node /opt/app
-USER node
-
-# Build and run
+# Build the Strapi project
 RUN npm run build
+
+# Expose Strapi default port
 EXPOSE 1337
-CMD ["npm", "run", "develop"]
+
+# Start Strapi in production mode
+CMD ["npm", "run", "start"]
